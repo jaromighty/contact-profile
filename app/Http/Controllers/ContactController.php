@@ -23,5 +23,7 @@ class ContactController extends Controller
         ]);
 
         Mail::to($request->email)->send(new ContactReceived($contact));
+
+        return response();
     }
 }
