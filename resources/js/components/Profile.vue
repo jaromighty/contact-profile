@@ -13,15 +13,45 @@
                 <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
             </div>
         </div>
+        <div class="mt-10">
+            <h1 class="text-2xl font-bold leading-7 text-gray-900">{{user.name.first + ' ' + user.name.last}}</h1>
+            <div class="mt-6">
+                <bio v-if="active === 'bio'" />
+                <location v-if="active === 'location'" :location="user.location" />
+                <email v-if="active === 'email'" :email="user.email" />
+                <phone v-if="active === 'phone'" :phone="user.phone" :cell="user.cell" />
+                <birthday v-if="active === 'birthday'" :dob="user.dob" />
+                <security v-if="active === 'security'" :username="user.login.username" />
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
+    import Bio from "./Bio";
+    import Location from "./Location";
+    import Email from "./Email";
+    import Phone from "./Phone";
+    import Birthday from "./Birthday";
+    import Security from "./Security";
     export default {
+        components: {
+            Bio,
+            Location,
+            Email,
+            Phone,
+            Birthday,
+            Security,
+        },
         data() {
             return {
                 user: null,
                 active: "bio"
+            }
+        },
+        methods: {
+            changeActive(active) {
+                this.active = active;
             }
         },
         mounted() {
