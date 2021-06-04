@@ -1907,7 +1907,11 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    submitMessage: function submitMessage() {}
+    submitMessage: function submitMessage() {
+      axios.post(this.form).then(function (response) {
+        return console.log(response);
+      });
+    }
   }
 });
 
@@ -20225,88 +20229,126 @@ var render = function() {
         }
       },
       [
-        _vm._m(0),
+        _c("div", { staticClass: "mt-2" }, [
+          _c(
+            "label",
+            {
+              staticClass: "block text-sm font-medium text-gray-700",
+              attrs: { for: "name" }
+            },
+            [_vm._v("Name")]
+          ),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.name,
+                expression: "form.name"
+              }
+            ],
+            staticClass:
+              "mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
+            attrs: {
+              type: "text",
+              id: "name",
+              autocomplete: "name",
+              required: ""
+            },
+            domProps: { value: _vm.form.name },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "name", $event.target.value)
+              }
+            }
+          })
+        ]),
         _vm._v(" "),
-        _vm._m(1),
+        _c("div", { staticClass: "mt-2" }, [
+          _c(
+            "label",
+            {
+              staticClass: "block text-sm font-medium text-gray-700",
+              attrs: { for: "email" }
+            },
+            [_vm._v("Email")]
+          ),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.email,
+                expression: "form.email"
+              }
+            ],
+            staticClass:
+              "mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
+            attrs: {
+              type: "email",
+              id: "email",
+              autocomplete: "email",
+              required: ""
+            },
+            domProps: { value: _vm.form.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "email", $event.target.value)
+              }
+            }
+          })
+        ]),
         _vm._v(" "),
-        _vm._m(2),
+        _c("div", { staticClass: "mt-2" }, [
+          _c(
+            "label",
+            {
+              staticClass: "block text-sm font-medium text-gray-700",
+              attrs: { for: "message" }
+            },
+            [_vm._v("About")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mt-1" }, [
+            _c("textarea", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.form.message,
+                  expression: "form.message"
+                }
+              ],
+              staticClass:
+                "shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md",
+              attrs: { id: "message", rows: "4", required: "" },
+              domProps: { value: _vm.form.message },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.form, "message", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
         _vm._v(" "),
-        _vm._m(3)
+        _vm._m(0)
       ]
     )
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mt-2" }, [
-      _c(
-        "label",
-        {
-          staticClass: "block text-sm font-medium text-gray-700",
-          attrs: { for: "name" }
-        },
-        [_vm._v("Name")]
-      ),
-      _vm._v(" "),
-      _c("input", {
-        staticClass:
-          "mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
-        attrs: { type: "text", name: "name", id: "name", autocomplete: "name" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mt-2" }, [
-      _c(
-        "label",
-        {
-          staticClass: "block text-sm font-medium text-gray-700",
-          attrs: { for: "email" }
-        },
-        [_vm._v("Email")]
-      ),
-      _vm._v(" "),
-      _c("input", {
-        staticClass:
-          "mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
-        attrs: {
-          type: "email",
-          name: "email",
-          id: "email",
-          autocomplete: "email"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mt-2" }, [
-      _c(
-        "label",
-        {
-          staticClass: "block text-sm font-medium text-gray-700",
-          attrs: { for: "message" }
-        },
-        [_vm._v("About")]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "mt-1" }, [
-        _c("textarea", {
-          staticClass:
-            "shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md",
-          attrs: { id: "message", name: "message", rows: "4" }
-        })
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

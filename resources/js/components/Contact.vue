@@ -4,16 +4,16 @@
         <form @submit.prevent="submitMessage">
             <div class="mt-2">
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" name="name" id="name" autocomplete="name" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                <input type="text" v-model="form.name" id="name" autocomplete="name" required class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
             </div>
             <div class="mt-2">
                 <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" autocomplete="email" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                <input type="email" v-model="form.email" id="email" autocomplete="email" required class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
             </div>
             <div class="mt-2">
                 <label for="message" class="block text-sm font-medium text-gray-700">About</label>
                 <div class="mt-1">
-                    <textarea id="message" name="message" rows="4" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" />
+                    <textarea id="message" v-model="form.message" rows="4" required class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" />
                 </div>
             </div>
             <div class="mt-4">
@@ -38,7 +38,8 @@ export default {
     },
     methods: {
         submitMessage() {
-
+            axios.post(this.form)
+                .then(response => console.log(response));
         }
     }
 }
