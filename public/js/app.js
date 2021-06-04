@@ -1899,16 +1899,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      form: {
-        name: name,
-        email: email,
-        message: message
-      }
+      name: null,
+      email: null,
+      message: null
     };
   },
   methods: {
     submitMessage: function submitMessage() {
-      axios.post(this.form).then(function (response) {
+      axios.post('/contact', {
+        name: this.name,
+        email: this.email,
+        message: this.message
+      }).then(function (response) {
         return console.log(response);
       });
     }
@@ -20244,8 +20246,8 @@ var render = function() {
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.form.name,
-                expression: "form.name"
+                value: _vm.name,
+                expression: "name"
               }
             ],
             staticClass:
@@ -20256,13 +20258,13 @@ var render = function() {
               autocomplete: "name",
               required: ""
             },
-            domProps: { value: _vm.form.name },
+            domProps: { value: _vm.name },
             on: {
               input: function($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.$set(_vm.form, "name", $event.target.value)
+                _vm.name = $event.target.value
               }
             }
           })
@@ -20283,8 +20285,8 @@ var render = function() {
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.form.email,
-                expression: "form.email"
+                value: _vm.email,
+                expression: "email"
               }
             ],
             staticClass:
@@ -20295,13 +20297,13 @@ var render = function() {
               autocomplete: "email",
               required: ""
             },
-            domProps: { value: _vm.form.email },
+            domProps: { value: _vm.email },
             on: {
               input: function($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.$set(_vm.form, "email", $event.target.value)
+                _vm.email = $event.target.value
               }
             }
           })
@@ -20323,20 +20325,20 @@ var render = function() {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.form.message,
-                  expression: "form.message"
+                  value: _vm.message,
+                  expression: "message"
                 }
               ],
               staticClass:
                 "shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md",
               attrs: { id: "message", rows: "4", required: "" },
-              domProps: { value: _vm.form.message },
+              domProps: { value: _vm.message },
               on: {
                 input: function($event) {
                   if ($event.target.composing) {
                     return
                   }
-                  _vm.$set(_vm.form, "message", $event.target.value)
+                  _vm.message = $event.target.value
                 }
               }
             })
