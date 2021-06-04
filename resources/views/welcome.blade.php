@@ -11,8 +11,13 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+        <!-- Scripts -->
+        <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
-        
+        <div id="app">
+            <profile />
+        </div>
     </body>
 </html>
