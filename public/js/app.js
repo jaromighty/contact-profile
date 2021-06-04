@@ -1866,7 +1866,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      user: null
+      user: null,
+      active: "bio"
     };
   },
   mounted: function mounted() {
@@ -19456,12 +19457,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _vm.user
-    ? _c("div", { staticClass: "px-4 py-6" }, [
-        _c("div", { staticClass: "flex items-center" }, [
+    ? _c("div", { staticClass: "p-6" }, [
+        _c("div", { staticClass: "flex items-center space-x-8" }, [
           _c("div", {}, [
             _c("img", {
-              staticClass: "h-16 w-16 rounded-full",
-              attrs: { src: _vm.user.picture.thumbnail, alt: "" }
+              staticClass: "h-40 w-40 rounded-full",
+              attrs: { src: _vm.user.picture.large, alt: "" }
             })
           ]),
           _vm._v(" "),

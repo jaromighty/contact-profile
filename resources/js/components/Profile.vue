@@ -21,6 +21,7 @@
         data() {
             return {
                 user: null,
+                active: "bio"
             }
         },
         mounted() {
