@@ -29,11 +29,9 @@
 export default {
     data() {
         return {
-            form: {
-                name,
-                email,
-                message,
-            }
+            name: null,
+            email: null,
+            message: null,
         }
     },
     methods: {
