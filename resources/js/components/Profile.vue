@@ -22,7 +22,8 @@
             }
         },
         mounted() {
-            console.log('Component mounted.')
+            axios.get('https://randomuser.me/api')
+                .then(response => (this.user = response.data.results[0]));
         }
     }
 </script>
