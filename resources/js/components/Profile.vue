@@ -1,14 +1,8 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
+    <div v-if="user" class="px-4 py-6">
+        <div class="flex items-center">
+            <div class="">
+                <img class="h-16 w-16 rounded-full" :src="user.picture.thumbnail" alt="" />
             </div>
         </div>
     </div>
