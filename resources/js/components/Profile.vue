@@ -1,6 +1,6 @@
 <template>
-    <div v-if="user" class="px-4 py-6">
-        <div class="flex items-center">
+    <div v-if="user" class="p-6">
+        <div class="flex items-center space-x-8">
             <div class="">
                 <img class="h-40 w-40 rounded-full" :src="user.picture.large" alt="" />
             </div>
