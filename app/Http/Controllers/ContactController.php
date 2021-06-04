@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactReceived;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -19,5 +21,7 @@ class ContactController extends Controller
             'email' => $request->email,
             'message' => $request->message
         ]);
+
+        Mail::to($request->email)->send(new ContactReceived($contact));
     }
 }
