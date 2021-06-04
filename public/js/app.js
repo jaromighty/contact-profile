@@ -1896,22 +1896,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       name: null,
       email: null,
-      message: null
+      message: null,
+      showResponse: false
     };
   },
   methods: {
     submitMessage: function submitMessage() {
+      var _this = this;
+
       axios.post('/contact', {
         name: this.name,
         email: this.email,
         message: this.message
-      }).then(function (response) {
-        return console.log(response);
+      }).then(function () {
+        return _this.showResponse = true;
       });
     }
   }
@@ -20215,139 +20223,149 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "border-t border-gray-300 pt-4 mt-4" }, [
-    _c("h2", { staticClass: "text-xl font-bold leading-7 text-gray-900" }, [
-      _vm._v("Contact Me")
-    ]),
-    _vm._v(" "),
-    _c(
-      "form",
-      {
-        on: {
-          submit: function($event) {
-            $event.preventDefault()
-            return _vm.submitMessage.apply(null, arguments)
-          }
-        }
-      },
-      [
-        _c("div", { staticClass: "mt-2" }, [
+  return _c("div", [
+    _vm.showResponse === false
+      ? _c("div", { staticClass: "border-t border-gray-300 pt-4 mt-4" }, [
           _c(
-            "label",
-            {
-              staticClass: "block text-sm font-medium text-gray-700",
-              attrs: { for: "name" }
-            },
-            [_vm._v("Name")]
+            "h2",
+            { staticClass: "text-xl font-bold leading-7 text-gray-900" },
+            [_vm._v("Contact Me")]
           ),
           _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.name,
-                expression: "name"
-              }
-            ],
-            staticClass:
-              "mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
-            attrs: {
-              type: "text",
-              id: "name",
-              autocomplete: "name",
-              required: ""
-            },
-            domProps: { value: _vm.name },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.name = $event.target.value
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "mt-2" }, [
           _c(
-            "label",
+            "form",
             {
-              staticClass: "block text-sm font-medium text-gray-700",
-              attrs: { for: "email" }
-            },
-            [_vm._v("Email")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.email,
-                expression: "email"
-              }
-            ],
-            staticClass:
-              "mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
-            attrs: {
-              type: "email",
-              id: "email",
-              autocomplete: "email",
-              required: ""
-            },
-            domProps: { value: _vm.email },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.email = $event.target.value
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "mt-2" }, [
-          _c(
-            "label",
-            {
-              staticClass: "block text-sm font-medium text-gray-700",
-              attrs: { for: "message" }
-            },
-            [_vm._v("About")]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "mt-1" }, [
-            _c("textarea", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.message,
-                  expression: "message"
-                }
-              ],
-              staticClass:
-                "shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md",
-              attrs: { id: "message", rows: "4", required: "" },
-              domProps: { value: _vm.message },
               on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.message = $event.target.value
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.submitMessage.apply(null, arguments)
                 }
               }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _vm._m(0)
-      ]
-    )
+            },
+            [
+              _c("div", { staticClass: "mt-2" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "block text-sm font-medium text-gray-700",
+                    attrs: { for: "name" }
+                  },
+                  [_vm._v("Name")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.name,
+                      expression: "name"
+                    }
+                  ],
+                  staticClass:
+                    "mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
+                  attrs: {
+                    type: "text",
+                    id: "name",
+                    autocomplete: "name",
+                    required: ""
+                  },
+                  domProps: { value: _vm.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.name = $event.target.value
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "mt-2" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "block text-sm font-medium text-gray-700",
+                    attrs: { for: "email" }
+                  },
+                  [_vm._v("Email")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.email,
+                      expression: "email"
+                    }
+                  ],
+                  staticClass:
+                    "mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
+                  attrs: {
+                    type: "email",
+                    id: "email",
+                    autocomplete: "email",
+                    required: ""
+                  },
+                  domProps: { value: _vm.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.email = $event.target.value
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "mt-2" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "block text-sm font-medium text-gray-700",
+                    attrs: { for: "message" }
+                  },
+                  [_vm._v("About")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "mt-1" }, [
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.message,
+                        expression: "message"
+                      }
+                    ],
+                    staticClass:
+                      "shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md",
+                    attrs: { id: "message", rows: "4", required: "" },
+                    domProps: { value: _vm.message },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.message = $event.target.value
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(0)
+            ]
+          )
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.showResponse === true
+      ? _c("div", [_c("p", [_vm._v("Thank you for contacting me!")])])
+      : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -20363,7 +20381,7 @@ var staticRenderFns = [
             "inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 bluefocus:ring-blue-500",
           attrs: { type: "submit" }
         },
-        [_vm._v("\n                Send\n            ")]
+        [_vm._v("\n                    Send\n                ")]
       )
     ])
   }
