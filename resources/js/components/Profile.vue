@@ -24,6 +24,7 @@
                 <security v-if="active === 'security'" :username="user.login.username" />
             </div>
         </div>
+        <contact />
     </div>
 </template>
 
@@ -34,6 +35,7 @@
     import Phone from "./Phone";
     import Birthday from "./Birthday";
     import Security from "./Security";
+    import Contact from "./Contact";
     export default {
         components: {
             Bio,
@@ -42,6 +44,7 @@
             Phone,
             Birthday,
             Security,
+            Contact,
         },
         data() {
             return {
