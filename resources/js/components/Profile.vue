@@ -16,6 +16,11 @@
 
 <script>
     export default {
+        data() {
+            return {
+                user: null,
+            }
+        },
         mounted() {
             console.log('Component mounted.')
         }
