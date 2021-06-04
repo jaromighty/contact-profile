@@ -36,8 +36,12 @@ export default {
     },
     methods: {
         submitMessage() {
-            axios.post(this.form)
-                .then(response => console.log(response));
+            axios.post('/contact', {
+                name: this.name,
+                email: this.email,
+                message: this.message
+            })
+            .then(response => console.log(response));
         }
     }
 }
