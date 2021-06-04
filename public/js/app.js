@@ -20191,12 +20191,18 @@ var render = function() {
             _c(
               "svg",
               {
-                staticClass: "w-10 h-10 text-blue-600",
+                staticClass:
+                  "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
                 attrs: {
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
+                },
+                on: {
+                  click: function($event) {
+                    return _vm.changeActive("bio")
+                  }
                 }
               },
               [
@@ -20215,12 +20221,18 @@ var render = function() {
             _c(
               "svg",
               {
-                staticClass: "w-10 h-10 text-blue-600",
+                staticClass:
+                  "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
                 attrs: {
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
+                },
+                on: {
+                  click: function($event) {
+                    return _vm.changeActive("location")
+                  }
                 }
               },
               [
@@ -20247,12 +20259,18 @@ var render = function() {
             _c(
               "svg",
               {
-                staticClass: "w-10 h-10 text-blue-600",
+                staticClass:
+                  "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
                 attrs: {
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
+                },
+                on: {
+                  click: function($event) {
+                    return _vm.changeActive("email")
+                  }
                 }
               },
               [
@@ -20271,12 +20289,18 @@ var render = function() {
             _c(
               "svg",
               {
-                staticClass: "w-10 h-10 text-blue-600",
+                staticClass:
+                  "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
                 attrs: {
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
+                },
+                on: {
+                  click: function($event) {
+                    return _vm.changeActive("phone")
+                  }
                 }
               },
               [
@@ -20295,12 +20319,18 @@ var render = function() {
             _c(
               "svg",
               {
-                staticClass: "w-10 h-10 text-blue-600",
+                staticClass:
+                  "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
                 attrs: {
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
+                },
+                on: {
+                  click: function($event) {
+                    return _vm.changeActive("birthday")
+                  }
                 }
               },
               [
@@ -20319,12 +20349,18 @@ var render = function() {
             _c(
               "svg",
               {
-                staticClass: "w-10 h-10 text-blue-600",
+                staticClass:
+                  "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
                 attrs: {
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
+                },
+                on: {
+                  click: function($event) {
+                    return _vm.changeActive("security")
+                  }
                 }
               },
               [
