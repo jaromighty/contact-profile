@@ -2014,6 +2014,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Birthday__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Birthday */ "./resources/js/components/Birthday.vue");
 /* harmony import */ var _Security__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Security */ "./resources/js/components/Security.vue");
 /* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Contact */ "./resources/js/components/Contact.vue");
+/* harmony import */ var _Social__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Social */ "./resources/js/components/Social.vue");
 //
 //
 //
@@ -2044,6 +2045,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+
 
 
 
@@ -2059,7 +2064,8 @@ __webpack_require__.r(__webpack_exports__);
     Phone: _Phone__WEBPACK_IMPORTED_MODULE_3__.default,
     Birthday: _Birthday__WEBPACK_IMPORTED_MODULE_4__.default,
     Security: _Security__WEBPACK_IMPORTED_MODULE_5__.default,
-    Contact: _Contact__WEBPACK_IMPORTED_MODULE_6__.default
+    Contact: _Contact__WEBPACK_IMPORTED_MODULE_6__.default,
+    Social: _Social__WEBPACK_IMPORTED_MODULE_7__.default
   },
   data: function data() {
     return {
@@ -19901,6 +19907,43 @@ component.options.__file = "resources/js/components/Security.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Social.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Social.vue ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Social_vue_vue_type_template_id_0b4c4718___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Social.vue?vue&type=template&id=0b4c4718& */ "./resources/js/components/Social.vue?vue&type=template&id=0b4c4718&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__.default)(
+  script,
+  _Social_vue_vue_type_template_id_0b4c4718___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Social_vue_vue_type_template_id_0b4c4718___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Social.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Birthday.vue?vue&type=script&lang=js&":
 /*!***********************************************************************!*\
   !*** ./resources/js/components/Birthday.vue?vue&type=script&lang=js& ***!
@@ -20145,6 +20188,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Security_vue_vue_type_template_id_4a5becab___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Security_vue_vue_type_template_id_4a5becab___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Security.vue?vue&type=template&id=4a5becab& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Security.vue?vue&type=template&id=4a5becab&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Social.vue?vue&type=template&id=0b4c4718&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/Social.vue?vue&type=template&id=0b4c4718& ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Social_vue_vue_type_template_id_0b4c4718___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Social_vue_vue_type_template_id_0b4c4718___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Social_vue_vue_type_template_id_0b4c4718___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Social.vue?vue&type=template&id=0b4c4718& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Social.vue?vue&type=template&id=0b4c4718&");
 
 
 /***/ }),
@@ -20510,249 +20570,268 @@ var render = function() {
   return _vm.user
     ? _c(
         "div",
-        { staticClass: "p-6" },
+        { staticClass: "w-full" },
         [
-          _c("div", { staticClass: "flex items-center space-x-8" }, [
-            _c("div", {}, [
-              _c("img", {
-                staticClass: "h-40 w-40 rounded-full",
-                attrs: { src: _vm.user.picture.large, alt: "" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "grid grid-cols-2 grid-rows-3 gap-8" }, [
-              _c(
-                "svg",
-                {
-                  staticClass:
-                    "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
-                  attrs: {
-                    fill: "none",
-                    stroke: "currentColor",
-                    viewBox: "0 0 24 24",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.changeActive("bio")
-                    }
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d:
-                        "M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    }
+          _c(
+            "div",
+            { staticClass: "p-6 max-w-6xl mx-auto mb-12" },
+            [
+              _c("div", { staticClass: "flex items-center space-x-8" }, [
+                _c("div", {}, [
+                  _c("img", {
+                    staticClass: "h-40 w-40 rounded-full",
+                    attrs: { src: _vm.user.picture.large, alt: "" }
                   })
-                ]
-              ),
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "grid grid-cols-2 grid-rows-3 gap-8" },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass:
+                          "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
+                        attrs: {
+                          fill: "none",
+                          stroke: "currentColor",
+                          viewBox: "0 0 24 24",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        },
+                        on: {
+                          click: function($event) {
+                            return _vm.changeActive("bio")
+                          }
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d:
+                              "M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "svg",
+                      {
+                        staticClass:
+                          "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
+                        attrs: {
+                          fill: "none",
+                          stroke: "currentColor",
+                          viewBox: "0 0 24 24",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        },
+                        on: {
+                          click: function($event) {
+                            return _vm.changeActive("location")
+                          }
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d:
+                              "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "svg",
+                      {
+                        staticClass:
+                          "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
+                        attrs: {
+                          fill: "none",
+                          stroke: "currentColor",
+                          viewBox: "0 0 24 24",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        },
+                        on: {
+                          click: function($event) {
+                            return _vm.changeActive("email")
+                          }
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d:
+                              "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "svg",
+                      {
+                        staticClass:
+                          "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
+                        attrs: {
+                          fill: "none",
+                          stroke: "currentColor",
+                          viewBox: "0 0 24 24",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        },
+                        on: {
+                          click: function($event) {
+                            return _vm.changeActive("phone")
+                          }
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d:
+                              "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "svg",
+                      {
+                        staticClass:
+                          "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
+                        attrs: {
+                          fill: "none",
+                          stroke: "currentColor",
+                          viewBox: "0 0 24 24",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        },
+                        on: {
+                          click: function($event) {
+                            return _vm.changeActive("birthday")
+                          }
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d:
+                              "M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "svg",
+                      {
+                        staticClass:
+                          "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
+                        attrs: {
+                          fill: "none",
+                          stroke: "currentColor",
+                          viewBox: "0 0 24 24",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        },
+                        on: {
+                          click: function($event) {
+                            return _vm.changeActive("security")
+                          }
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d:
+                              "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]),
               _vm._v(" "),
-              _c(
-                "svg",
-                {
-                  staticClass:
-                    "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
-                  attrs: {
-                    fill: "none",
-                    stroke: "currentColor",
-                    viewBox: "0 0 24 24",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.changeActive("location")
-                    }
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d:
-                        "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    }
-                  }),
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    }
-                  })
-                ]
-              ),
+              _c("div", { staticClass: "mt-10" }, [
+                _c(
+                  "h1",
+                  { staticClass: "text-2xl font-bold leading-7 text-gray-900" },
+                  [
+                    _vm._v(
+                      _vm._s(_vm.user.name.first + " " + _vm.user.name.last)
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "mt-6" },
+                  [
+                    _vm.active === "bio" ? _c("bio") : _vm._e(),
+                    _vm._v(" "),
+                    _vm.active === "location"
+                      ? _c("location", {
+                          attrs: { location: _vm.user.location }
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.active === "email"
+                      ? _c("email", { attrs: { email: _vm.user.email } })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.active === "phone"
+                      ? _c("phone", {
+                          attrs: { phone: _vm.user.phone, cell: _vm.user.cell }
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.active === "birthday"
+                      ? _c("birthday", { attrs: { dob: _vm.user.dob } })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.active === "security"
+                      ? _c("security", {
+                          attrs: { username: _vm.user.login.username }
+                        })
+                      : _vm._e()
+                  ],
+                  1
+                )
+              ]),
               _vm._v(" "),
-              _c(
-                "svg",
-                {
-                  staticClass:
-                    "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
-                  attrs: {
-                    fill: "none",
-                    stroke: "currentColor",
-                    viewBox: "0 0 24 24",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.changeActive("email")
-                    }
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d:
-                        "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "svg",
-                {
-                  staticClass:
-                    "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
-                  attrs: {
-                    fill: "none",
-                    stroke: "currentColor",
-                    viewBox: "0 0 24 24",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.changeActive("phone")
-                    }
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d:
-                        "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "svg",
-                {
-                  staticClass:
-                    "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
-                  attrs: {
-                    fill: "none",
-                    stroke: "currentColor",
-                    viewBox: "0 0 24 24",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.changeActive("birthday")
-                    }
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d:
-                        "M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "svg",
-                {
-                  staticClass:
-                    "w-10 h-10 text-blue-600 cursor-pointer hover:text-blue-700",
-                  attrs: {
-                    fill: "none",
-                    stroke: "currentColor",
-                    viewBox: "0 0 24 24",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.changeActive("security")
-                    }
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d:
-                        "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                    }
-                  })
-                ]
-              )
-            ])
-          ]),
+              _c("contact")
+            ],
+            1
+          ),
           _vm._v(" "),
-          _c("div", { staticClass: "mt-10" }, [
-            _c(
-              "h1",
-              { staticClass: "text-2xl font-bold leading-7 text-gray-900" },
-              [_vm._v(_vm._s(_vm.user.name.first + " " + _vm.user.name.last))]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "mt-6" },
-              [
-                _vm.active === "bio" ? _c("bio") : _vm._e(),
-                _vm._v(" "),
-                _vm.active === "location"
-                  ? _c("location", { attrs: { location: _vm.user.location } })
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.active === "email"
-                  ? _c("email", { attrs: { email: _vm.user.email } })
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.active === "phone"
-                  ? _c("phone", {
-                      attrs: { phone: _vm.user.phone, cell: _vm.user.cell }
-                    })
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.active === "birthday"
-                  ? _c("birthday", { attrs: { dob: _vm.user.dob } })
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.active === "security"
-                  ? _c("security", {
-                      attrs: { username: _vm.user.login.username }
-                    })
-                  : _vm._e()
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("contact")
+          _c("social")
         ],
         1
       )
@@ -20782,6 +20861,109 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("p", [_vm._v("Username: " + _vm._s(_vm.username))])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Social.vue?vue&type=template&id=0b4c4718&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Social.vue?vue&type=template&id=0b4c4718& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "fixed bottom-0 z-30 w-full bg-gray-100" }, [
+    _c(
+      "div",
+      {
+        staticClass: "flex justify-between flex-1 px-6 py-4 max-w-6xl mx-auto"
+      },
+      [
+        _c("a", { attrs: { href: "https://facebook.com", target: "_blank" } }, [
+          _c(
+            "svg",
+            {
+              staticClass: "h-6 w-6 text-gray-600",
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                viewBox: "0 0 320 512"
+              }
+            },
+            [
+              _c("path", {
+                attrs: {
+                  fill: "currentColor",
+                  d:
+                    "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "https://twitter.com", target: "_blank" } }, [
+          _c(
+            "svg",
+            {
+              staticClass: "h-6 w-6 text-gray-600",
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                viewBox: "0 0 512 512"
+              }
+            },
+            [
+              _c("path", {
+                attrs: {
+                  fill: "currentColor",
+                  d:
+                    "M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          { attrs: { href: "https://instagram.com", target: "_blank" } },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "h-6 w-6 text-gray-600",
+                attrs: {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  viewBox: "0 0 448 512"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    fill: "currentColor",
+                    d:
+                      "M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ]
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
